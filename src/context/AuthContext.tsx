@@ -5,7 +5,7 @@ import { auth } from "../configs/firebase";
 
 
 // 👇 UID của admin (bạn có thể để trong .env nếu cần bảo mật)
-const ADMIN_UID = "SWSl1lqxELUYRjl0leylhzypEHi2";
+const ADMIN_UID = import.meta.env.VITE_ADMIN_UID;
 
 type AuthContextType = {
     user: User | null;
